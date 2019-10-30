@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: KGFMapSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112da05fdf6425d41be646e5a5bbcb82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itsDataModuleMinimap:
+    itsGlobalSettings:
+      itsHideGUI: 0
+      itsRenderLayers:
+        serializedVersion: 2
+        m_Bits: 0
+      itsTarget: {fileID: 0}
+      itsIsStatic: 1
+      itsStaticNorth: 0
+      itsIsActive: 1
+      itsColorMap: {r: 1, g: 1, b: 1, a: 1}
+      itsColorBackground: {r: 0, g: 0, b: 0, a: 1}
+      itsColorAll: {r: 1, g: 1, b: 1, a: 1}
+      itsEnableLogMessages: 0
+      itsOrientation: 1
+    itsAppearanceMiniMap:
+      itsSize: .414999992
+      itsButtonSize: .129999995
+      itsButtonPadding: .0350000001
+      itsButton: {fileID: 2800000, guid: 09fae546dcd5c0d47b5eba728ee01ef3, type: 3}
+      itsButtonHover: {fileID: 2800000, guid: 423788b558cdc9e4a9bf2daeab1f50a8, type: 3}
+      itsButtonDown: {fileID: 2800000, guid: bed37edd331a66f4a8fa082b39b13754, type: 3}
+      itsIconZoomIn: {fileID: 2800000, guid: c4f7bb67f65e0b742a3c46f84e45bc46, type: 3}
+      itsIconZoomOut: {fileID: 2800000, guid: 7d3151ac385861447a4fdded071d710e, type: 3}
+      itsIconZoomLock: {fileID: 2800000, guid: d65329699cd23e34192e0e6ee98cb1c5, type: 3}
+      itsIconFullscreen: {fileID: 2800000, guid: d9176510110be274b8609375430a2155,
+        type: 3}
+      itsBackground: {fileID: 2800000, guid: 9c9867c18fa3a1b4abc8390844618882, type: 3}
+      itsBackgroundBorder: 0
+      itsMask: {fileID: 2800000, guid: e91fb55511a1555499c116bb0b1d88ce, type: 3}
+      itsScaleIcons: 1
+      itsScaleArrows: .150000006
+      itsRadiusArrows: .800000012
+      itsAlignmentVertical: 0
+      itsAlignmentHorizontal: 2
+      itsMarginHorizontal: 0
+      itsMarginVertical: 0
+    itsAppearanceMap:
+      itsButtonSize: .0500000007
+      itsButtonPadding: .00999999978
+      itsButtonSpace: .00999999978
+      itsButton: {fileID: 2800000, guid: 09fae546dcd5c0d47b5eba728ee01ef3, type: 3}
+      itsButtonHover: {fileID: 2800000, guid: 423788b558cdc9e4a9bf2daeab1f50a8, type: 3}
+      itsButtonDown: {fileID: 2800000, guid: bed37edd331a66f4a8fa082b39b13754, type: 3}
+      itsIconZoomIn: {fileID: 2800000, guid: c4f7bb67f65e0b742a3c46f84e45bc46, type: 3}
+      itsIconZoomOut: {fileID: 2800000, guid: 7d3151ac385861447a4fdded071d710e, type: 3}
+      itsIconZoomLock: {fileID: 2800000, guid: d65329699cd23e34192e0e6ee98cb1c5, type: 3}
+      itsIconFullscreen: {fileID: 2800000, guid: d9176510110be274b8609375430a2155,
+        type: 3}
+      itsBackground: {fileID: 2800000, guid: ea0829302c8149b4c93c38942f1e000c, type: 3}
+      itsBackgroundBorder: 10
+      itsMask: {fileID: 0}
+      itsScaleIcons: 1
+      itsAlignmentVertical: 0
+      itsAlignmentHorizontal: 2
+      itsOrientation: 0
+    itsPanning:
+      itsActive: 1
+      itsUseBounds: 1
+      itsBoundsLayers:
+        serializedVersion: 2
+        m_Bits: 1
+    itsFogOfWar:
+      itsActive: 0
+      itsResolutionX: 10
+      itsResolutionY: 10
+      itsRevealDistance: 10
+      itsRevealedFullDistance: 5
+      itsHideMapIcons: 0
+    itsZoom:
+      itsZoomStartValue: 20
+      itsZoomMin: 10
+      itsZoomMax: 50
+      itsZoomChangeValue: 10
+    itsViewport:
+      itsActive: 0
+      itsColor: {r: .5, g: .5, b: .5, a: 1}
+      itsCamera: {fileID: 0}
+    itsPhoto:
+      itsTakePhoto: 1
+      itsPhotoLayers:
+        serializedVersion: 2
+        m_Bits: 1
+      itsPixelPerMeter: 5
+    itsUserFlags:
+      itsActive: 1
+      itsMapIcon: {fileID: 11400000, guid: b2a1975c1a1b5b742a597494f4ec1b0c, type: 2}
+    itsShaders:
+      itsShaderMapIcon: {fileID: 4800000, guid: 7152d1da5101ffc4db282e13b2edea2e,
+        type: 3}
+      itsShaderPhotoPlane: {fileID: 4800000, guid: ab41726a00c3bf94b86e71157b708666,
+        type: 3}
+      itsShaderFogOfWar: {fileID: 4800000, guid: e83c2f831bb0fd14b92751cdcbe823ec,
+        type: 3}
+      itsShaderMapMask: {fileID: 4800000, guid: a7dc67e6559dbc742a300c439f6ccbea,
+        type: 3}
+    itsToolTip:
+      itsActive: 1
+      itsTextureBackground: {fileID: 2800000, guid: 09fae546dcd5c0d47b5eba728ee01ef3,
+        type: 3}
+      itsBackgroundBorder:
+        m_Left: 3
+        m_Right: 3
+        m_Top: 3
+        m_Bottom: 3
+      itsBackgroundPadding:
+        m_Left: 3
+        m_Right: 3
+        m_Top: 3
+        m_Bottom: 0
+      itsColorText: {r: 1, g: 1, b: 1, a: 1}
+      itsFontText: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

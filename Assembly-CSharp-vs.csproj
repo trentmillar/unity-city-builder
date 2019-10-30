@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{70BCFC26-15D9-A95E-E060-6A2615A2DBD9}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_1;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\3DView\Scripts\BuildingManager3D.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\3DView\Scripts\BuildingModeGrid3D.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\3DView\Scripts\BuildingView3D.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\3DView\Scripts\BuildingWithAutoAcknowledgeBuilding.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\3DView\Scripts\InputControl3D.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\BuildingUpgrades\UpgradableBuilding.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\BuildingUpgrades\UpgradableBuildingData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\SimpleBattle\AttackActivityData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Extensions\SimpleBattle\AttackResultsHandler.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Activities\Activity.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Activities\ActivityData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Activities\ActivityManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Activities\GatherActivity.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Activities\RewardType.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\Building.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\BuildingData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\BuildingManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\BuildingModeGrid.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\BuildingState.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\BuildingTypeData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Buildings\BuildingView.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Occupants\AttackerOccupantTypeData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Occupants\OccupantData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Occupants\OccupantManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Occupants\OccupantTypeData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Persistence\PersistenceManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Persistence\PlayerPrefsPersistenceManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Persistence\SaveGameData.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Persistence\SaveMode.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Resource\ResourceManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\GameStateManager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Grid\AbstractGrid.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Grid\GridPosition.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Grid\IGrid.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Grid\IGridObject.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Grid\UnsuableGrid.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Loader.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\Engine\Utility\Manager.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\AcknowledgeBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\ActivityButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\AttackButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\BuildBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\CancelBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\ChooseTargetButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\ClearObstacleButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\CollectButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\DismissOccupantButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\DoSellBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\MoveBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\PlaceBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\RecruitButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\SellBuildingButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\ShowRecruitPanelButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\Buttons\SpeedUpButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIBattleButtonControl.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIBattleResultsPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIBuildingInfoPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIBuildingSelect.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIBuildingSelectPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIButtonSwitchPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIColor.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIDraggableGridObject.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIGamePanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIOccupantSelect.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIOccupantSelectPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIOccupantView.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIOccupantViewPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIResourceView.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UISellBuildingPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UISpeedUpPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UITargetSelectPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\Scripts\UI\UIZoomControl.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonPlayAnimation.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonSound.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIButtonTween.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UICheckbox.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UICheckboxControlledComponent.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UICheckboxControlledObject.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIDragPanelContents.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIDraggablePanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIInputValidator.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UISliderColors.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIFilledSprite.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIInputSaved.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UISlicedSprite.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UITiledSprite.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\CityBuilderStarterKit\ThirdParty\iTween.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Example Assets\Scripts\BuildingGUI.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Example Assets\Scripts\ExampleGUI.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Camera\CameraMovement.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Camera\CameraTarget.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Camera\MakeTransparent.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Camera\ObjectGhoster.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Constants.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Globals.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Placement\BuildManager.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Placement\BuildingCollision.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Placement\BuildingList.cs" />
+     <Compile Include="Assets\Isometric Toolkit\Scripts\Placement\CursorGrid.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\CoroutineManager.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\EventListener.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\Interpolation.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\ProximityManager.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\QualityRequirement.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\RandomGenerator.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\SGUpdateManager.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\SplineQ.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\SplineV.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\Tools.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\WorkQueue.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Internal\WorkerThread.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\ControlScheme.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\EventPlayAnimation.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\FaceCamera.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\ImprovedTrail.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\NetworkDebugger.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\NetworkInstantiate.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\NetworkManager.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\NetworkRigidbody.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\NetworkRigidbodySync.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\PerformanceMonitor.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\RealtimeCubemap.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\SGLagPosition.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\SGLagRotation.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\SGSpinTransform.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\ScrollDetailUV.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\Other\ScrollUV.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGAnchor.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGBorderedSprite.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGClickSound.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGInput.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGInputSaved.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGMouse.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGOrthoCamera.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGScreen.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGSendMessage.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGSendMessageInt.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGSetState.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGSpin.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGSprite.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGStateColor.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGStatePosition.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGStateRotation.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGTiledSprite.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Common\UI\SGWidget.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ApplyGravityWhileInside.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ArcadeMovement.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ChaseCamera.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ChaseTarget.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\Condition.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ConditionalInstantiate.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\CopyCamera.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\DamageReduction.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\DamageShield.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\DelayedTextInput.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\DestroyIfNotOwned.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\DestroyWhenEmittersFinish.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\DistantObjects.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\Explosive.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\FaceTarget.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\FiredObject.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\GameFaction.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\GameUnit.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\HUDCamera.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\HUDStats.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\HealWhileInside.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\HealthBar.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\HeatSource.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\LightFlicker.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\Missile.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\MissileLauncher.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\PlasmaBeam.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\Player.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\PowerGenerator.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ProximityNearMiss.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ResetTransform.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\SampleOverTime.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\SetAngularVelocity.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\SetShipColors.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipCollisionReaction.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipDebug.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipExhibit.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipSpeed.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipThrusterEmitter.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipThrusterLight.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\ShipThrusterTrail.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\Spaceship.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\SpaceshipController.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\TargetReticle.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\TrailController.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\Weapon.cs" />
+     <Compile Include="Assets\SGSK\Scripts\Game\WeaponLauncher.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGButtonHighlight.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGButtonHostGame.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGButtonJoinGame.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGFlicker.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGHealthBar.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGMouseDragIndicator.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGPlayerAim.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGPowerBar.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGProgressBar.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGTarget.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGTargetLock.cs" />
+     <Compile Include="Assets\SGSK\Scripts\UI\SGTiltCamera.cs" />
+     <Compile Include="Assets\SplashScreen\Script\SplashToMenu.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFAccessor\scripts\KGFAccessor.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFCustomGUI\scripts\KGFCustomGUI.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFCustomGUI\scripts\KGFCustomGUITutorial.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFCustomGUI\scripts\interfaces\KGFICustomGUI.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFCustomGUI\scripts\interfaces\KGFICustomInspectorGUI.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFEvent\scripts\KGFEvent.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFEvent\scripts\KGFEventBase.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFEvent\scripts\KGFEventSequence.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFFPSDisplay\scripts\KGFFPSDisplay.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIRenderer\scripts\KGFGUIRenderer.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIRenderer\scripts\interfaces\KGFIGui2D.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\KGFGUIUtility.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\KGFGUIUtilityTutorial.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\controls\KGFGUIDataTable.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\controls\KGFGUIDropDown.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\controls\KGFGUIObjectList.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\controls\KGFGUISelectionList.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFGUIUtility\scripts\interfaces\KGFIControl.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFLogic\scripts\KGFLogicAnalyzer.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFModule\scripts\KGFModule.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFScreen\scripts\KGFScreen.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\KGFUtility\scripts\KGFUtility.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\IDReference.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFCoreVersion.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFDataTable.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFDelegate.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFDocumentation.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFEventExpose.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFGlobals.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFITaggable.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFIValidator.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFMessageList.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFObject.cs" />
+     <Compile Include="Assets\kolmich\KGFCore\scripts\KGFString.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\demo\scripts\KGFMapSystemScriptControlDemo.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\demo\scripts\KGFMapSystemStyleDemo.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\demo\scripts\charactercontroller.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\demo\scripts\charactercontroller_sidescroller.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\scripts\KGFIMapIcon.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\scripts\KGFMapIcon.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\scripts\KGFMapSystem.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\scripts\KGFMapSystemPlayMaker.cs" />
+     <Compile Include="Assets\kolmich\KGFMapSystem\scripts\KGFPhotoCapture.cs" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Depth.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Data\Resources\OccupantData.xml" />
+     <None Include="Assets\SGSK\Models\Planet\Atmosphere.shader" />
+     <None Include="Assets\SGSK\Shaders\Text.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\SGSK\Models\Planet\Planet.shader" />
+     <None Include="Assets\kolmich\Resources\KGFSkins\default\readme.txt" />
+     <None Include="Assets\CityBuilderStarterKit\Shaders\DesaturationWithColor.shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\SGSK\Models\Asteroid\Asteroid.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\SGSK\Models\Asteroid\Asteroid - Bump.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Data\Resources\BuildingData.xml" />
+     <None Include="Assets\CityBuilderStarterKit\Textures\Fonts\LucidiaBlackletter_28OutlineNumbers.txt" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\SGSK\Misc\Distortion\DistortionTwo.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Shaders\Desaturation.shader" />
+     <None Include="Assets\kolmich\KGFMapSystem\shaders\ShaderMapMask.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Textures\Fonts\LucidiaBlackletter48.txt" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Extensions\BuildingUpgrades\Data\Resources\UpgradableActivityData.xml" />
+     <None Include="Assets\CityBuilderStarterKit\Extensions\BuildingUpgrades\Data\Resources\UpgradableBuildingData.xml" />
+     <None Include="Assets\CityBuilderStarterKit\Data\Resources\ActivityData.xml" />
+     <None Include="Assets\SGSK\Shaders\Unlit - Mask.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Textures\InGame\ArtCredits.txt" />
+     <None Include="Assets\SGSK\Models\Planet\PlanetLow.shader" />
+     <None Include="Assets\SGSK\Models\Plasma Beam\Plasma Beam.shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\ReadMe.txt" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Transparent Colored (HardClip).shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Transparent Colored Overlay.shader" />
+     <None Include="Assets\kolmich\KGFMapSystem\shaders\ShaderPhotoPlane.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\kolmich\KGFMapSystem\shaders\ShaderMapIcon.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\SGSK\Shaders\Unlit - Transparent Tint.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\SGSK\Misc\Ship\Hidden - Ship Hull.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Extensions\SimpleBattle\Data\Resources\AttackActivityData.xml" />
+     <None Include="Assets\CityBuilderStarterKit\Textures\Fonts\LucidiaBlackletter24.txt" />
+     <None Include="Assets\SGSK\Misc\Distortion\DistortionOne.shader" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\SGSK\Shaders\Spaceship.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Data\Resources\ObstacleData.xml" />
+     <None Include="Assets\SGSK\ReadMe (Important!).txt" />
+     <None Include="Assets\CityBuilderStarterKit\Extensions\3DView\Data\Resources\3DBuildingData.xml" />
+     <None Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\SGSK\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\SGSK\Misc\Ship\Ship Hull.shader" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\CityBuilderStarterKit\Textures\Fonts\Helvetica_20.txt" />
+     <None Include="Assets\SGSK\Scripts\Effects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+ <Reference Include="Assets\CityBuilderStarterKit\ThirdParty\NGUI\DLLs\NGUI">
+ <HintPath>Assets\CityBuilderStarterKit\ThirdParty\NGUI\DLLs\NGUI.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\kolmich\KGFCore\KGFUtility\KGFUtils.Settings">
+ <HintPath>Assets\kolmich\KGFCore\KGFUtility\KGFUtils.Settings.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

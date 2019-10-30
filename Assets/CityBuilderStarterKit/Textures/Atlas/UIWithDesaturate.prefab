@@ -1,0 +1,584 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: UIWithDesaturate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 432a8d7bca544410ca3807ab3835e559, type: 2}
+  sprites:
+  - name: FrameNoScroll
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 405
+      width: 645
+      height: 619
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 405
+      width: 645
+      height: 619
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LargeFrame
+    outer:
+      serializedVersion: 2
+      x: 649
+      y: 482
+      width: 670
+      height: 542
+    inner:
+      serializedVersion: 2
+      x: 649
+      y: 482
+      width: 670
+      height: 542
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BuildingAvailable
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 231
+      width: 604
+      height: 170
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 231
+      width: 604
+      height: 170
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BuildingUnavailable
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 57
+      width: 604
+      height: 170
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 57
+      width: 604
+      height: 170
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: vsplayer_icon
+    outer:
+      serializedVersion: 2
+      x: 868
+      y: 103
+      width: 118
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 868
+      y: 103
+      width: 118
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonBevel
+    outer:
+      serializedVersion: 2
+      x: 1442
+      y: 790
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1442
+      y: 790
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: study_icon
+    outer:
+      serializedVersion: 2
+      x: 1323
+      y: 909
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1323
+      y: 909
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: move_icon
+    outer:
+      serializedVersion: 2
+      x: 1109
+      y: 103
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1109
+      y: 103
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: recruit_icon
+    outer:
+      serializedVersion: 2
+      x: 1466
+      y: 76
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1466
+      y: 76
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: help_icon
+    outer:
+      serializedVersion: 2
+      x: 1585
+      y: 76
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1585
+      y: 76
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: army_icon
+    outer:
+      serializedVersion: 2
+      x: 1544
+      y: 433
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1544
+      y: 433
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonBackground
+    outer:
+      serializedVersion: 2
+      x: 1425
+      y: 314
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1425
+      y: 314
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: resource_icon
+    outer:
+      serializedVersion: 2
+      x: 990
+      y: 103
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 990
+      y: 103
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hero_icon
+    outer:
+      serializedVersion: 2
+      x: 1323
+      y: 671
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1323
+      y: 671
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: cancel_icon
+    outer:
+      serializedVersion: 2
+      x: 1442
+      y: 552
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1442
+      y: 552
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: build_icon
+    outer:
+      serializedVersion: 2
+      x: 1561
+      y: 790
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1561
+      y: 790
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: vscpu_icon
+    outer:
+      serializedVersion: 2
+      x: 1585
+      y: 195
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1585
+      y: 195
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: confirm_icon
+    outer:
+      serializedVersion: 2
+      x: 1425
+      y: 433
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1425
+      y: 433
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: gather_icon
+    outer:
+      serializedVersion: 2
+      x: 1561
+      y: 909
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1561
+      y: 909
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: castspell_icon
+    outer:
+      serializedVersion: 2
+      x: 1466
+      y: 195
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1466
+      y: 195
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: coin_icon
+    outer:
+      serializedVersion: 2
+      x: 1323
+      y: 552
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1323
+      y: 552
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: unit_icon
+    outer:
+      serializedVersion: 2
+      x: 1323
+      y: 790
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1323
+      y: 790
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LucidiaBlackletter24
+    outer:
+      serializedVersion: 2
+      x: 1165
+      y: 222
+      width: 256
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 1165
+      y: 222
+      width: 256
+      height: 256
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LucidiaBlackletter48
+    outer:
+      serializedVersion: 2
+      x: 649
+      y: 222
+      width: 512
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 649
+      y: 222
+      width: 512
+      height: 256
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LucidiaBlackletter_28OutlineNumbers
+    outer:
+      serializedVersion: 2
+      x: 868
+      y: 35
+      width: 128
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 868
+      y: 35
+      width: 128
+      height: 64
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Helvetica_20
+    outer:
+      serializedVersion: 2
+      x: 608
+      y: 90
+      width: 256
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 608
+      y: 90
+      width: 256
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: clear_icon
+    outer:
+      serializedVersion: 2
+      x: 1544
+      y: 314
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1544
+      y: 314
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: coin_icon 1
+    outer:
+      serializedVersion: 2
+      x: 1228
+      y: 103
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1228
+      y: 103
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: units_icon
+    outer:
+      serializedVersion: 2
+      x: 1347
+      y: 103
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1347
+      y: 103
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: gold_icon
+    outer:
+      serializedVersion: 2
+      x: 1442
+      y: 909
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1442
+      y: 909
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: upgrade_icon
+    outer:
+      serializedVersion: 2
+      x: 1442
+      y: 671
+      width: 115
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 1442
+      y: 671
+      width: 115
+      height: 115
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
